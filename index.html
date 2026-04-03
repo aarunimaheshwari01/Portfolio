@@ -98,22 +98,8 @@
   .proj-impact{font-family:'DM Mono',monospace;font-size:11px;color:var(--accent);background:var(--accent-dim);border:1px solid rgba(240,185,74,.2);padding:6px 12px;border-radius:3px;display:inline-block;margin-bottom:20px;}
   .proj-tools{display:flex;flex-wrap:wrap;gap:6px;}
   .proj-tool{font-family:'DM Mono',monospace;font-size:10px;color:var(--text-dimmer);border:1px solid var(--border);padding:3px 9px;border-radius:2px;letter-spacing:.04em;}
-  .project-card-link,
-.project-card-link:visited,
-.project-card-link:hover,
-.project-card-link:active {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
-
-.project-card-link * {
-  text-decoration: none !important;
-  color: inherit;
-}
-
-.project-card-link:hover .proj-card {
-  cursor: pointer;
+  .proj-card{
+  cursor:pointer;
 }
 
   /* CERTS */
@@ -335,18 +321,25 @@
     <h2>Featured <em>Projects</em></h2>
     <div class="divider"></div>
   </div>
-<a href="https://github.com/aarunimaheshwari01/Sales-Pricing-Variance-Analysis-Dashboard" 
-   target="_blank" 
-   rel="noopener noreferrer"
-   class="proj-card-link">
-  <div class="proj-card">
-    <span class="project-label">PROJECT 01</span>
-    <h3>Sales Pricing & Variance Analysis Dashboard</h3>
-    <p> End-to-end Power BI solution integrating SQL datasets to monitor pricing trends, sales KPIs, and budget variance across market segments. Standardized commission-impact metrics and automated data refresh. </p>
-    <div class="proj-highlight"> ↓ 35% reduction in manual reporting time </div>
-    <div class="proj-tags"> <span>Power BI</span> <span>DAX</span> <span>SQL</span> <span>Variance Analysis</span> <span>KPI Design</span> </div>
+  
+<article class="proj-card" onclick="window.open('https://github.com/aarunimaheshwari01/Sales-Pricing-Variance-Analysis-Dashboard', '_blank')">
+  <div class="proj-number">PROJECT 01</div>
+  <h3>Sales Pricing & Variance Analysis Dashboard</h3>
+  <p class="proj-desc">
+    End-to-end Power BI solution integrating SQL datasets to monitor pricing trends,
+    sales KPIs, and budget variance across market segments. Standardized
+    commission-impact metrics and automated data refresh.
+  </p>
+  <div class="proj-impact">↓ 35% reduction in manual reporting time</div>
+  <div class="proj-tools">
+    <span class="proj-tool">Power BI</span>
+    <span class="proj-tool">DAX</span>
+    <span class="proj-tool">SQL</span>
+    <span class="proj-tool">Variance Analysis</span>
+    <span class="proj-tool">KPI Design</span>
   </div>
-</a>
+</article>
+  
     <div class="proj-card">
       <div class="proj-number">PROJECT 02</div>
       <h3>Financial Forecasting &amp; Reporting Automation</h3>
@@ -354,6 +347,7 @@
       <div class="proj-impact">↓ ~30% reduction in manual processing effort</div>
       <div class="proj-tools"><span class="proj-tool">Python</span><span class="proj-tool">Pandas</span><span class="proj-tool">NumPy</span><span class="proj-tool">Advanced Excel</span><span class="proj-tool">Forecasting</span></div>
     </div>
+  
     <div class="proj-card">
       <div class="proj-number">PROJECT 03</div>
       <h3>Supply Chain &amp; Sales Performance Analytics</h3>
@@ -361,6 +355,7 @@
       <div class="proj-impact">↓ 15% reduction in inventory holding costs</div>
       <div class="proj-tools"><span class="proj-tool">SQL</span><span class="proj-tool">Tableau</span><span class="proj-tool">Supply Chain Analytics</span><span class="proj-tool">Margin Analysis</span></div>
     </div>
+  
     <div class="proj-card">
       <div class="proj-number">PROJECT 04</div>
       <h3>Unstructured Data Integration &amp; Golden Record Analytics</h3>
@@ -368,6 +363,7 @@
       <div class="proj-impact">Cross-system golden record alignment</div>
       <div class="proj-tools"><span class="proj-tool">SQL</span><span class="proj-tool">Power BI</span><span class="proj-tool">Data Governance</span><span class="proj-tool">ETL Audit</span></div>
     </div>
+  
     <div class="proj-card">
       <div class="proj-number">PROJECT 05</div>
       <h3>Airbnb Price Prediction &amp; Market Analysis</h3>
@@ -375,6 +371,7 @@
       <div class="proj-impact">10,000+ records analyzed</div>
       <div class="proj-tools"><span class="proj-tool">Python</span><span class="proj-tool">Regression</span><span class="proj-tool">EDA</span><span class="proj-tool">Tableau</span><span class="proj-tool">Feature Analysis</span></div>
     </div>
+  
     <div class="proj-card">
       <div class="proj-number">PROJECT 06</div>
       <h3>Internal Control &amp; Data Integrity Audit</h3>
