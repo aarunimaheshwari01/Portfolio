@@ -87,7 +87,8 @@
   .exp-bullets li strong{color:var(--text);}
 
   /* PROJECTS */
-  .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2px;}
+  .projects-grid{display:grid;grid-template-columns:repeat(3, minmax(0, 1fr));;gap:2px;}
+  .projects-grid > *{min-width:0;}
   .proj-card{background:var(--bg2);border:1px solid var(--border);padding:36px;position:relative;overflow:hidden;transition:all .25s;}
   .proj-card:hover{border-color:rgba(240,185,74,.4);transform:translateY(-2px);}
   .proj-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),transparent);opacity:0;transition:opacity .25s;}
