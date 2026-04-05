@@ -87,7 +87,7 @@
   .exp-bullets li strong{color:var(--text);}
 
   /* PROJECTS */
-  .projects-grid{display:grid;grid-template-columns:repeat(3, minmax(0, 1fr));;gap:2px;}
+  .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2px;}
   .projects-grid > *{min-width:0;}
   .proj-card{background:var(--bg2);border:1px solid var(--border);padding:36px;position:relative;overflow:hidden;transition:all .25s;}
   .proj-card:hover{border-color:rgba(240,185,74,.4);transform:translateY(-2px);}
@@ -99,7 +99,7 @@
   .proj-impact{font-family:'DM Mono',monospace;font-size:11px;color:var(--accent);background:var(--accent-dim);border:1px solid rgba(240,185,74,.2);padding:6px 12px;border-radius:3px;display:inline-block;margin-bottom:20px;}
   .proj-tools{display:flex;flex-wrap:wrap;gap:6px;}
   .proj-tool{font-family:'DM Mono',monospace;font-size:10px;color:var(--text-dimmer);border:1px solid var(--border);padding:3px 9px;border-radius:2px;letter-spacing:.04em;}
-  .proj-card{cursor:pointer;}
+  /*.proj-card{cursor:pointer;}*/
 
   /* CERTS */
   .certs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;}
